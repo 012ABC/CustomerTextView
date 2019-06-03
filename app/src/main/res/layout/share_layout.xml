@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/liveLn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/live_share_bitmap_header"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/live_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="48dp"
+                    android:text="@string/live_title"
+                    android:textColor="@color/color_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/live_news_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/live_news"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/live_title_english"
+                    android:textColor="@color/color_white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/live_news_english"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="73dp"
+                    android:background="@drawable/live_line_white_bg" />
+
+                <TextView
+                    android:id="@+id/live_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="2019/4/13 10:11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2D489E">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="243dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/live_share_bitmap_bottom_background">
+
+                    <ImageView
+                        android:id="@+id/live_img_id"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="54dp"
+                        android:layout_marginBottom="29dp"
+                        android:src="@drawable/live_share_bitmap_logo"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/my_iron_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginBottom="54dp"
+                        android:layout_toEndOf="@+id/live_img_id"
+                        android:text="@string/live_my_steel_string"
+                        android:textColor="#999999"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="36dp"
+                        android:layout_toEndOf="@+id/live_img_id"
+                        android:text="@string/live_description_content"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/qr_code_img"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="56dp"
+                        android:layout_marginBottom="34dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="52dp"
+                        android:layout_marginBottom="19dp"
+                        android:text="@string/live_press_qr_content"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="121dp"
+                    android:background="@drawable/bg_bubble_white">
+
+                    <TextView
+                        android:id="@+id/title_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginTop="47dp"
+                        android:layout_marginEnd="37dp"
+                        android:layout_marginBottom="48dp"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="15sp"
+                        tools:text="12334445556666666666" />
+
+                    <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/live_share_bitmap_water_logo"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

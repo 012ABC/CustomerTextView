@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomerTextView</string>
+    <string name="live_title">快讯</string>
+    <string name="live_title_english">- NEWS -</string>
+    <string name="live_my_steel_string">我的钢铁</string>
+    <string name="live_description_content">1秒读懂大宗市场</string>
+    <string name="live_press_qr_content">长按二维码识别</string>
+    <string name="live_cancel_string">取消</string>
+    <string name="string_ratio">获取比率</string>
+</resources>
